@@ -1,0 +1,300 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: aktiv-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #000;
+  overflow-x: hidden;
+}
+h1 {
+  font-size: 18px;
+  padding: none;
+  line-height: normal;
+}
+h1 a {
+  color: black;
+}
+h3 {
+  font-family: droid-sans-mono, monospace;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: #0011ff;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+small {
+  font-size: 14px;
+}
+img {
+  padding: 30px;
+
+  /*/ width: 100%;/*/
+}
+/*/.bb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}/*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-left: 1px solid black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #656565;
+  border-left: 1px solid black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #656565;
+}
+/* width */
+::-webkit-scrollbar:horizontal {
+  display: none;
+}
+
+/* Handle on hover 
+::-webkit-scrollbar-thumb:vertical:hover {
+  display: none;
+}
+*/
+.home-img {
+  width: 200px;
+  height: 200px;
+
+  position: fixed;
+  top: 40%;
+  bottom: 40%;
+  left: 45%;
+  -webkit-animation: rotate 4s linear infinite;
+  animation: rotate 6s linear infinite;
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#menu {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  top: 0;
+  padding: 10px 20px 10px 20px;
+}
+#menu h1 {
+  font-size: 18px;
+}
+
+.column2 {
+  width: 100%;
+  padding: 20px 10px 10px 10px;
+}
+.bbcontent {
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}
+
+.bb {
+  padding: 20px 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.info {
+  padding: 10px;
+}
+.essays {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.column2 {
+  margin-top: 100px;
+}
+.content {
+  background: rgba(255, 255, 255, 0.7);
+  height: auto;
+  margin: 30px auto;
+  line-height: 1.4em;
+  padding: 10px;
+}
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  align-items: center;
+  height: 70%;
+  -webkit-overflow-scrolling: touch;
+}
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: #0011ff;
+  font-size: 24px;
+  display: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+#banner {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: #0011ff;
+    font-size: 24px;
+    display: flex;
+  }
+
+  .main-nav {
+    list-style-type: none;
+    display: none;
+  }
+  .home-img {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  #menu {
+    display: none;
+  }
+  .content {
+    margin: 0px 0 0 0;
+  }
+  .column2 {
+    margin: -10px 0 0 0;
+    align-self: center;
+  }
+  .bb {
+    margin: 0px 0 0 0;
+    padding: 0;
+    display: inline-table;
+  }
+  .bbcontent {
+    margin-top: -100px;
+    display: inline-table;
+  }
+  .scrolling-wrapper {
+    flex-direction: column;
+    height: 100%;
+    display: inline-table;
+  }
+
+  .main-nav li {
+    text-align: center;
+    margin: 15px auto;
+  }
+
+  .essays {
+    margin-top: -150px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
