@@ -203,7 +203,7 @@ img {
 .bbcontent {
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 70vw;
 }
 .bbcontent img{
     width:80%;
@@ -330,7 +330,7 @@ img {
     -webkit-flex-align: center;
 -ms-flex-align: center;
 -webkit-align-items: center;
-margin-top: -90px;
+margin-top: 0px;
 height: 100vh;
   }
 
