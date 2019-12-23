@@ -203,7 +203,7 @@ img {
 .bbcontent {
   align-items: center;
   justify-content: center;
-  width: 70vw;
+  width: 100vw;
 }
 .bbcontent img{
     width:80%;
@@ -311,27 +311,15 @@ img {
     margin: 0px 0 0 0;
     padding: 0;
     display: inline-table;
-    align-items: center;
-    justify-content: center;
   }
   .bbcontent {
     margin-top: -100px;
     display: inline-table;
-    align-items: center;
-    justify-content: center;
   }
   .scrolling-wrapper {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
     height: 100%;
-    /*/display: inline-table;/*/
-    -webkit-flex-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-margin-top: 0px;
-height: 100vh;
+    display: inline-table;
   }
 
   .main-nav li {
