@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "book";
+  src: url("fonts/standard-book-webfont.woff") format("woff");
+}
+
 html,
 body,
 div,
@@ -68,7 +73,7 @@ td {
 }
 
 body {
-  font-family: aktiv-grotesk, sans-serif;
+  font-family: "book", "aktiv-grotesk", helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
@@ -84,6 +89,9 @@ h1 {
 }
 h1 a {
   color: black;
+  font-size: 20px;
+}
+u {
   font-size: 20px;
 }
 h2 {
@@ -106,7 +114,7 @@ a {
 a:hover {
   font-style: italic;
 }
-p{
+p {
   line-height: 1.3em;
   font-size: 20px;
 }
@@ -198,15 +206,14 @@ img {
 .column2 {
   width: 100%;
   padding: 20px 10px 10px 10px;
-  
 }
 .bbcontent {
   align-items: center;
   justify-content: center;
   width: 100vw;
 }
-.bbcontent img{
-    width:80%;
+.bbcontent img {
+  width: 80%;
 }
 .bb {
   padding: 20px 0px;
@@ -214,7 +221,7 @@ img {
   height: 80vh;
   width: 100%;
 }
-.bb img{
+.bb img {
   height: 80%;
   width: 80%;
 }
@@ -226,7 +233,7 @@ img {
 }
 
 .essays {
-  width: 50%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -241,7 +248,7 @@ img {
   padding: 10px;
 }
 .scrolling-wrapper {
- display: flex;
+  display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -249,8 +256,7 @@ img {
   object-fit: contain;
   margin-top: 30px;
 }
-.scrolling-wrapper img{
- 
+.scrolling-wrapper img {
   display: inline-block;
   max-height: 100%;
   height: inherit; /* CHANGE */
@@ -275,8 +281,6 @@ img {
   display: none;
 }
 @media screen and (max-width: 500px) {
-
- 
   .navbar-toggle {
     position: absolute;
     top: 10px;
