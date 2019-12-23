@@ -71,24 +71,32 @@ body {
   font-family: aktiv-grotesk, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
-  line-height: 1.5;
+  font-size: 20px;
   padding: 0px;
   background-color: #ffffff;
   color: #000;
   overflow-x: hidden;
 }
 h1 {
-  font-size: 18px;
+  font-size: 20px;
   padding: none;
   line-height: normal;
 }
 h1 a {
   color: black;
+  font-size: 20px;
 }
+h2 {
+  line-height: 1em;
+  font-style: italic;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 h3 {
   font-family: droid-sans-mono, monospace;
   font-weight: 400;
+  line-height: 1.3em;
 }
 a {
   text-decoration: none;
@@ -98,12 +106,18 @@ a {
 a:hover {
   font-style: italic;
 }
-
+p{
+  line-height: 1.3em;
+  font-size: 20px;
+}
 small {
   font-size: 14px;
 }
 img {
-  padding: 30px;
+  padding: 20px;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 
   /*/ width: 100%;/*/
 }
@@ -184,22 +198,33 @@ img {
 .column2 {
   width: 100%;
   padding: 20px 10px 10px 10px;
+  
 }
 .bbcontent {
   align-items: center;
   justify-content: center;
-  height: 50%;
+  width: 100vw;
 }
-
+.bbcontent img{
+    width:80%;
+}
 .bb {
   padding: 20px 0px;
   margin-top: auto;
-  margin-bottom: auto;
+  height: 80vh;
+  width: 100%;
+}
+.bb img{
+  height: 80%;
+  width: 80%;
 }
 
 .info {
-  padding: 10px;
+  padding: 30px;
+  padding-top: 0px;
+  bottom: 0;
 }
+
 .essays {
   width: 50%;
   margin-left: auto;
@@ -216,13 +241,22 @@ img {
   padding: 10px;
 }
 .scrolling-wrapper {
-  display: flex;
+ display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
-  align-items: center;
-  height: 70%;
   -webkit-overflow-scrolling: touch;
+  height: 70vh;
+  object-fit: contain;
+  margin-top: 30px;
 }
+.scrolling-wrapper img{
+ 
+  display: inline-block;
+  max-height: 100%;
+  height: inherit; /* CHANGE */
+  width: auto; /* CHANGE */
+}
+
 .navbar-toggle {
   position: absolute;
   top: 10px;
@@ -241,6 +275,8 @@ img {
   display: none;
 }
 @media screen and (max-width: 500px) {
+
+ 
   .navbar-toggle {
     position: absolute;
     top: 10px;
